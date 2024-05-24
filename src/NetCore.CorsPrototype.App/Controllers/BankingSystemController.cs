@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BankingSystem.Controllers
+namespace NetCore.CorsPrototype.App.Controllers
 {
     public class User
     {
@@ -20,7 +20,7 @@ namespace BankingSystem.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class BankingSystemController : ControllerBase
     {
         private readonly List<User> _users = new List<User>();
         private int _userIdCounter = 1;
